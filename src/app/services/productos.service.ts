@@ -13,12 +13,16 @@ export class ProductosService {
   }
 
   public cargar_prouductos(){
-    this.carga_producto = false;
+    this.carga_producto = true;
         this.http.get('https://doctorcelular-ee865.firebaseio.com/producto_idx.json').subscribe(
           res=> {  
             console.log( res.json());
-            this.carga_producto = true;
-            this.productos = res.json();
+           
+
+            setTimeout (()=> {
+              this.carga_producto = false;
+              this.productos = res.json();
+            }, 1500)
                 }
         )
 
