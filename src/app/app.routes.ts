@@ -1,15 +1,15 @@
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 
-import { AboutComponent, DoctorcelularComponent } from './components/index.paginas';
+import { AboutComponent, DoctorcelularComponent, ProductoComponent ,SearchComponent} from './components/index.paginas';
 
 
 const APP_ROUTES: Routes = [
-    { path: '', component: DoctorcelularComponent },
+    { path: 'home', component: DoctorcelularComponent },
     { path: 'about', component: AboutComponent },
-    // { path: 'path3', component: Name3Component },
-    // { path: 'path4', component: Name4Component },
-    { path: '**', pathMatch:'full', redirectTo:'' },
+    { path: 'producto/:id', component: ProductoComponent },
+    { path: 'buscar/:term', component: SearchComponent },
+    { path: '**', pathMatch:'full', redirectTo:'home' },
 
     //{ path: 'path/:routeParam', component: MyComponent },
     //{ path: 'staticPath', component: ... },

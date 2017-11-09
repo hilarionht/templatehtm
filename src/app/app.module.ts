@@ -13,6 +13,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DoctorcelularComponent } from './components/doctorcelular/doctorcelular.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProductoComponent } from './components/producto/producto.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { AboutComponent } from './components/about/about.component';
     HeaderComponent,
     FooterComponent,
     DoctorcelularComponent,
-    AboutComponent
+    AboutComponent,
+    ProductoComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule, 
