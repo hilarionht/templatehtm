@@ -26,7 +26,7 @@ export class InformacionService {
   public carga_about()
     {
     this.http.get(this.url).subscribe(data=> {
-      console.log(data.json());
+      //console.log(data.json());
       this.aboutLoaded = true;
       this.team = data.json();
       
